@@ -1,0 +1,31 @@
+{
+    /* "files": [
+        "public/lib/main_fbx.js"
+    ], */
+    "compilerOptions": {
+        "noImplicitAny": false,
+        // "target": "es5",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        // "resolveJsonModule": true,
+        // "isolatedModules": true,
+        // "jsx": "preserve",
+        // "incremental": true,
+        // "allowSyntheticDefaultImports": true,
+        "checkJs": false,
+        // "sourceMap": true,
+        
+        // "strictNullChecks": false,
+        // "baseUrl": ".",
+        "target": "ES6",
+        // "lib": [
+        //   "dom",
+        //   "dom.iterable",
+        // ],
+        // "allowJs": true,
+        // "skipLibCheck": true,
+        // "strict": true,
+        // "forceConsistentCasingInFileNames": true,
+        // "noEmit": false,
+    }
+}

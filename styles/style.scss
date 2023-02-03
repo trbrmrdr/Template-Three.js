@@ -1,0 +1,52 @@
+@import 'vars.scss';
+
+html {
+  // font-family: 'Oswald';
+  font-weight: 700;
+  // text-transform: uppercase;
+}
+
+body {
+  // scroll-behavior: smooth;
+  overflow: hidden;
+  // overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+
+  // background-color: $black_color;
+  // color: $white_color;
+}
+
+// a {
+//   color: $white_color;
+//   text-decoration: none;
+// }
+
+
+@import 'gui_extend.scss';
+@import 'scrollbar.scss';
+
+@import 'btn.scss';
+@import 'header.scss';
+
+#canvas_container {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+#canvas{
+  opacity: 0.8;
+}
+#example {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(./../public/assets/example.jpeg) no-repeat center;
+  background-size: contain;
+  width: inherit;
+  height: inherit;
+}

@@ -1,0 +1,35 @@
+.btn {
+  // opacity: 1;
+
+  animation-duration: 1.4s;
+  // animation-iteration-count: infinite;
+  // transition: 0.3s;
+  animation-timing-function: ease;
+
+  &:hover {
+    // opacity: 0.8;
+    animation-name: bounce-scale;
+  }
+}
+
+@keyframes bounce-scale {
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+
+  10% {
+    transform: scale(.9, .9);
+  }
+
+  30% {
+    transform: scale(1.05, 1.05);
+  }
+
+  50% {
+    transform: scale(.95, .95);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}

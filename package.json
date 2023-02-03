@@ -1,0 +1,43 @@
+{
+  "name": "nft",
+  "private": true,
+  "scripts": {
+    "_dev": "next dev -p 300",
+    "_build": "next build && next export",
+    "_deploy": "next build && next export && firebase deploy --only functions,hosting",
+    "start": "next start -p 3016",
+    "lint": "next lint",
+    "build": "webpack --config ./webpack/webpack.prod.js",
+    "dev": "webpack serve --config ./webpack/webpack.dev.js --port 81",
+    "deploy": "npm run build && firebase deploy --only functions,hosting"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.1",
+    "three-to-cannon": "^4.2.0",
+    "ts-loader": "^9.2.8",
+    "tweakpane": "^3.1.2"
+  },
+  "devDependencies": {
+    "@tweakpane/core": "^1.1.2",
+    "@types/dat.gui": "^0.7.7",
+    "@types/js-cookie": "^3.0.2",
+    "@types/node": "17.0.16",
+    "css-loader": "^6.7.3",
+    "dat.gui": "^0.7.9",
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.10",
+    "javascript-obfuscator": "^4.0.0",
+    "postcss": "^8.4.6",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "three": "^0.141.0",
+    "typescript": "4.5.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0",
+    "webpack-obfuscator": "^3.5.1"
+  }
+}
